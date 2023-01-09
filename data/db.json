@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "email": "ziyodilla@gmail.com",
+      "password": "$2a$10$hbx6bvtO7oYIGxsWhUJFHuXD.G7mO5mNh4XSk.EGvuKobGPN/KUsO",
+      "firstName": "Ziyodilla",
+      "lastName": "Jumabaev",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "email": "galinavolkov22225@gmail.com",
+      "password": "$2a$10$zzCMuMiLv/0WNtRiopqXfOsxIPfEYxCx.Tvgrgt4LsvPuCsGgy2YO",
+      "firstName": "Ali",
+      "lastName": "Alimov",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "email": "1232322@mail.ru",
+      "password": "$2a$10$npy7pGIaQHme3dyE5Y.7V.8o9rlnVfv3mBnBQYMMvGIdJAKQdhhhW",
+      "firstName": "123",
+      "lastName": "333",
+      "gender": "female",
+      "id": 3
+    }
+  ],
+  "category": [
+    {
+      "category_name": "Samsung",
+      "id": 3
+    },
+    {
+      "category_name": "Vivo",
+      "id": 4
+    },
+    {
+      "category_name": "Pixer",
+      "id": 6
+    },
+    {
+      "category_name": "Apple",
+      "id": 7
+    },
+    {
+      "category_name": "Xiaomi",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "product_name": "Samsung s8 plus",
+      "product_price": "200",
+      "product_img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Folcha.uz%2Fru%2Fproduct%2Fview%2Fsamsung-galaxy-s8-midnight-black-2&psig=AOvVaw0mPl2PlfRksSPEk-wBBN4Y&ust=1673173446688000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCND20PmetfwCFQAAAAAdAAAAABAE",
+      "category_id": 3,
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "user_id": 1,
+      "user_name": "Ziyodilla",
+      "user_email": "ziyodilla@gmail.com",
+      "items": [
+        {
+          "product_name": "Samsung s22 ultra",
+          "product_price": "1200",
+          "product_img": "https://assets.asaxiy.uz/product/items/desktop/5b7a9d26fadad3953b9d6c0c531acdae2022030511064074991BjkdjJaiqF.jpg.webp",
+          "category_id": 3,
+          "id": 2,
+          "price": "1200",
+          "quantity": 2,
+          "itemTotal": 2400
+        },
+        {
+          "product_name": "Samsung s8 plus",
+          "product_price": "300",
+          "product_img": "https://olcha.uz/image/360x360/products/RUVQ6qM9EmNjfRBZDM46gj4EVTBue6qeX3mlIA9hlS9sGK3L0gGIkKSmprCc.jpg",
+          "category_id": 3,
+          "id": 1,
+          "price": "300",
+          "quantity": 1,
+          "itemTotal": 300
+        }
+      ],
+      "totalPrice": 2700,
+      "id": 1
+    }
+  ]
+}
