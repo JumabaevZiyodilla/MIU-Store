@@ -61,7 +61,7 @@ export const UserProductCart = ({ item }) => {
 }
 
 export const AdminProductCart = ({ item }) => {
-  const { product_name, product_price, product_img, id } = item
+  const { product_name, product_price, product_img, id,category_id } = item
   const [edit, setEdit] = useState(false)
   const [ids, setIds] = useState(0)
 
@@ -72,7 +72,6 @@ export const AdminProductCart = ({ item }) => {
   const editBtn = (id) => {
     setIds(id)
   }
-
   const deleteHandler = (id) => {
     axios
       .delete(`http://localhost:8080/products/${id}`)
@@ -82,14 +81,15 @@ export const AdminProductCart = ({ item }) => {
 
   const submitEditHandler = (evt) => {
     evt.preventDefault()
-    // axios
-    //   .put(`http://localhost:8080/products/${ids}`, {
-    //     product_name: productName.current.value,
-    //     product_price: productPrice.current.value,
-    //     product_img: productImg.current.value,
-    //   })
-    //   .then((res) => console.log(res))
-    //   .catch((error) => console.log(error))
+    axios
+      .put(`http://localhost:8080/products/${ids}`, {
+        product_name: productName.current.value,
+        product_price: productPrice.current.value,
+        product_img: productImg.current.value,
+        category_id: category_id,
+      })
+      .then((res) => console.log(res))
+      .catch((error) => console.log(error))
   }
   return (
     <>
